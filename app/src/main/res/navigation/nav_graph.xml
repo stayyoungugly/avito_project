@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.itis.avitoproject.presentation.ui.fragment.MainFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_currentWeatherFragment"
+            app:destination="@id/currentWeatherFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.itis.avitoproject.presentation.ui.fragment.SearchFragment"
+        android:label="SearchFragment" >
+        <action
+            android:id="@+id/action_searchFragment_to_currentWeatherFragment"
+            app:destination="@id/currentWeatherFragment" />
+        <argument
+            android:name="message"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/currentWeatherFragment"
+        android:name="com.itis.avitoproject.presentation.ui.fragment.CurrentWeatherFragment"
+        android:label="CurrentWeatherFragment" >
+        <action
+            android:id="@+id/action_currentDayFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_currentDayFragment_to_weekFragment"
+            app:destination="@id/weekFragment" />
+        <argument
+            android:name="lat"
+            app:argType="string" />
+        <argument
+            android:name="lon"
+            app:argType="string" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="weatherData"
+            app:argType="com.itis.avitoproject.domain.entity.CurrentWeather" />
+    </fragment>
+    <fragment
+        android:id="@+id/dayFragment"
+        android:name="com.itis.avitoproject.presentation.ui.fragment.DayFragment"
+        android:label="DayFragment" >
+        <argument
+            android:name="weather"
+            app:argType="com.itis.avitoproject.domain.entity.WeatherFullDay" />
+        <action
+            android:id="@+id/action_dayFragment_to_weekFragment"
+            app:destination="@id/weekFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/weekFragment"
+        android:name="com.itis.avitoproject.presentation.ui.fragment.WeekFragment"
+        android:label="WeekFragment" >
+        <action
+            android:id="@+id/action_weekFragment_to_dayFragment"
+            app:destination="@id/dayFragment" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_weekFragment_to_currentWeatherFragment"
+            app:destination="@id/currentWeatherFragment" />
+    </fragment>
+</navigation>

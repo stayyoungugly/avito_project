@@ -8,7 +8,6 @@
     <string name="temp">Temp</string>
     <string name="feels">Feels</string>
     <string name="weather_week">Погода на 7 дней</string>
-    <string name="city_name">Города</string>
     <string name="search">Поиск</string>
     <string name="enter_name">Введите название города</string>
     <string name="check_city">Определяем город…</string>

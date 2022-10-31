@@ -16,9 +16,18 @@ Android API 26+
 
 Single Activity, Clean Architecture, MVVM
 
-Coroutines + LiveData, Koin, OkHttp + Retrofit, SharedPreferences, Navigation Component
+Coroutines + LiveData, Koin, OkHttp + Retrofit, SharedPreferences, Navigation Component, работа с локацией через FusedLocationProviderClient
 
-![photo_2022-10-31_07-03-18](https://user-images.githubusercontent.com/70694385/198928636-b227dc80-7230-445c-8709-2e5a080f954b.jpg)
-![photo_2022-10-31_07-03-20](https://user-images.githubusercontent.com/70694385/198928639-34009e73-1f51-481f-b08f-13a9c7df1d12.jpg)
-![photo_2022-10-31_07-03-23](https://user-images.githubusercontent.com/70694385/198928641-8545390b-dd6d-4504-8dbd-b65934462e66.jpg)
-![photo_2022-10-31_07-03-25](https://user-images.githubusercontent.com/70694385/198928642-563d04d9-1c39-46cb-a7a4-f4c980f61b6a.jpg)
+Скриншоты:
+
+![photo_2022-10-31_07-08-12](https://user-images.githubusercontent.com/70694385/198929066-5646180e-4b1a-4496-896c-30085d83e31d.jpg)
+
+![photo_2022-10-31_07-08-15](https://user-images.githubusercontent.com/70694385/198929069-54910e9a-47c5-43c9-a807-43cbeac0ef1e.jpg)
+
+![photo_2022-10-31_07-08-17](https://user-images.githubusercontent.com/70694385/198929070-9af323d7-0f97-48b3-8662-3db3f19ec5c7.jpg)
+
+![photo_2022-10-31_07-08-19](https://user-images.githubusercontent.com/70694385/198929071-26d130d8-b959-4409-a3eb-97cec775a614.jpg)
+
+![photo_2022-10-31_07-08-21](https://user-images.githubusercontent.com/70694385/198929072-7fd17ebf-c8d5-4ee7-810f-41a741af3bb4.jpg)
+
+

@@ -1,6 +1,6 @@
 # avito_project
 
-<h1 align="center"> Мухаев Ильдар Рушанович, Казань, 3 курс, КФУ 
+<h1 align="center"> Мухаев Ильдар Рушанович, Казань, 3 курс, КФУ </h1>
 
 - Тестовый проект для Авито, октябрь 2022
 
@@ -10,15 +10,15 @@
 
 - В разделе Releases есть APK
 
-<h2 align="center"> Информация о проекте
+<h2 align="center"> Информация о проекте </h2>
 
-Android API 26+
+- Android API 26+
 
-Single Activity, Clean Architecture, MVVM
+- Single Activity, Clean Architecture, MVVM
 
-Coroutines + LiveData, Koin, OkHttp + Retrofit, SharedPreferences, Navigation Component, работа с локацией через FusedLocationProviderClient
+- Coroutines + LiveData, Koin, OkHttp + Retrofit, SharedPreferences, Navigation Component, работа с локацией через FusedLocationProviderClient
 
-Скриншоты:
+<h2 align="center"> Скриншоты:
 
 ![photo_2022-10-31_07-08-12](https://user-images.githubusercontent.com/70694385/198929066-5646180e-4b1a-4496-896c-30085d83e31d.jpg)
 
@@ -28,6 +28,6 @@ Coroutines + LiveData, Koin, OkHttp + Retrofit, SharedPreferences, Navigation Co
 
 ![photo_2022-10-31_07-08-19](https://user-images.githubusercontent.com/70694385/198929071-26d130d8-b959-4409-a3eb-97cec775a614.jpg)
 
-![photo_2022-10-31_07-08-21](https://user-images.githubusercontent.com/70694385/198929072-7fd17ebf-c8d5-4ee7-810f-41a741af3bb4.jpg)
+![photo_2022-10-31_07-08-21](https://user-images.githubusercontent.com/70694385/198929072-7fd17ebf-c8d5-4ee7-810f-41a741af3bb4.jpg) </h2>
 
 

@@ -18,7 +18,7 @@
 
 - Coroutines + LiveData, Koin, OkHttp + Retrofit, SharedPreferences, Navigation Component, работа с локацией через FusedLocationProviderClient
 
-<h2 align="center"> Скриншоты:
+<h2 align="center"> Скриншоты:<br><br>
 
 ![photo_2022-10-31_07-08-12](https://user-images.githubusercontent.com/70694385/198929066-5646180e-4b1a-4496-896c-30085d83e31d.jpg)
 

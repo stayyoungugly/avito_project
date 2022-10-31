@@ -1,26 +1,26 @@
 <resources>
     <string name="app_name">Avito Project</string>
     <string name="date">Date</string>
-    <string name="mintemp">minTemp</string>
-    <string name="maxtemp">maxTemp</string>
+    <string name="min_temp">minTemp</string>
+    <string name="max_temp">maxTemp</string>
     <string name="description">Description</string>
     <string name="daytime">DayTime</string>
     <string name="temp">Temp</string>
     <string name="feels">Feels</string>
     <string name="weather_week">Погода на 7 дней</string>
-    <string name="nameCity">Название города</string>
+    <string name="city_name">Города</string>
     <string name="search">Поиск</string>
     <string name="enter_name">Введите название города</string>
-    <string name="weather_app_project">Weather App Project</string>
+    <string name="check_city">Определяем город…</string>
     <string name="weather">Weather</string>
     <string name="city">Город</string>
     <string name="your_city">Ваш город:</string>
     <string name="week_weather_geo">Прогноз на 7 дней</string>
-    <string name="try_again">Повторить снова</string>
-    <string name="fail_appear">Возникла ошибка</string>
+    <string name="try_again">Повторить</string>
+    <string name="fail_appear">Данные не получены</string>
     <string name="min">Минимум</string>
     <string name="max">Максимум</string>
-    <string name="wind">Ветер</string>
+    <string name="wind">Скорость</string>
     <string name="speed">Speed</string>
     <string name="direction">Направление</string>
     <string name="dir">Dir</string>
@@ -31,4 +31,5 @@
     <string name="fail">Возникла ошибка! Попробуйте снова</string>
     <string name="add_city">Пожалуйста, введите город</string>
     <string name="city_not_found">Город не найден, попробуйте поиск</string>
+    <string name="feels_ru">Ощущается</string>
 </resources>

@@ -38,6 +38,10 @@ class SearchFragment : Fragment(R.layout.fragment_search) {
                     btnSearch.visibility = View.INVISIBLE
                 }
             }
+
+            btnBack.setOnClickListener {
+                requireActivity().onBackPressed()
+            }
         }
     }
 

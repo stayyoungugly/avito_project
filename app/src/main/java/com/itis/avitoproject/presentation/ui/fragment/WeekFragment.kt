@@ -49,13 +49,15 @@ class WeekFragment : Fragment(R.layout.fragment_week) {
             name = newName
             binding.ltLoading.loading.visibility = View.VISIBLE
             binding.ltDetails.visibility = View.GONE
+            isFail(false)
             weekViewModel.getWeekWeatherByName(name)
         }
 
-        with(binding.ltFail) {
+        with(binding) {
             btnFail.setOnClickListener {
-                binding.ltLoading.loading.visibility = View.VISIBLE
-                binding.ltDetails.visibility = View.GONE
+                ltLoading.loading.visibility = View.VISIBLE
+                ltDetails.visibility = View.GONE
+                isFail(false)
                 weekViewModel.getWeekWeatherByName(name)
             }
         }
@@ -92,10 +94,12 @@ class WeekFragment : Fragment(R.layout.fragment_week) {
         with(binding) {
             if (flag) {
                 binding.ltDetails.visibility = View.GONE
-                binding.ltFail.fail.visibility = View.VISIBLE
+                binding.btnFail.visibility = View.VISIBLE
+                binding.tvFail.visibility = View.VISIBLE
             } else {
                 binding.ltDetails.visibility = View.VISIBLE
-                binding.ltFail.fail.visibility = View.GONE
+                binding.btnFail.visibility = View.GONE
+                binding.tvFail.visibility = View.GONE
             }
         }
     }

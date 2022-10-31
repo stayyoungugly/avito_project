@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="param_title">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAlignment">center</item>
+        <item name="fontFamily">@font/spot_black</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:drawablePadding">10dp</item>
+    </style>
+
+    <style name="param_value">
+        <item name="android:textColor">@color/white</item>
+        <item name="fontFamily">@font/spot_book</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="button">
+        <item name="android:textColor">@color/light_blue</item>
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">@font/spot_bold</item>
+        <item name="android:background">@drawable/button_back</item>
+    </style>
+
+    <style name="temp_tv">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="fontFamily">@font/spot_book</item>
+    </style>
+
+    <style name="back_view">
+        <item name="cornerSize">50%</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+</resources>

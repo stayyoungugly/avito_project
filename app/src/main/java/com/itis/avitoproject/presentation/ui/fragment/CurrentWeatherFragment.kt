@@ -39,9 +39,8 @@ class CurrentWeatherFragment : Fragment(R.layout.fragment_current) {
         super.onViewCreated(view, savedInstanceState)
         initObservers()
         binding.rvTemps.adapter = tempsAdapter
-        openBundle()
         with(binding) {
-            ltFail.btnFail.setOnClickListener {
+            btnFail.setOnClickListener {
                 openBundle()
             }
             btnWeek.setOnClickListener {
@@ -53,6 +52,7 @@ class CurrentWeatherFragment : Fragment(R.layout.fragment_current) {
                 findNavController().navigate(R.id.action_currentDayFragment_to_searchFragment)
             }
         }
+        openBundle()
     }
 
     private fun openBundle() {
@@ -72,13 +72,11 @@ class CurrentWeatherFragment : Fragment(R.layout.fragment_current) {
         if (lon != null) {
             if (lat != null) {
                 currentViewModel.getCurrentWeatherByCoordinates(lat, lon)
-                currentViewModel.getDayWeatherByCoordinates(lat, lon)
             }
         }
         if (newName != null) {
             name = newName
             currentViewModel.getCurrentWeatherByName(name)
-            currentViewModel.getDayWeatherByName(name)
         }
 
         if (weatherData != null) {
@@ -100,7 +98,6 @@ class CurrentWeatherFragment : Fragment(R.layout.fragment_current) {
         }
         currentViewModel.dayWeather.observe(viewLifecycleOwner) { weatherInfo ->
             weatherInfo.fold(onSuccess = {
-                println(it)
                 setDayWeather(it)
                 binding.ltLoading.loading.visibility = View.GONE
                 binding.ltDetails.visibility = View.VISIBLE
@@ -155,10 +152,12 @@ class CurrentWeatherFragment : Fragment(R.layout.fragment_current) {
         with(binding) {
             if (flag) {
                 binding.ltDetails.visibility = View.GONE
-                binding.ltFail.fail.visibility = View.VISIBLE
+                binding.btnFail.visibility = View.VISIBLE
+                binding.tvFail.visibility = View.VISIBLE
             } else {
                 binding.ltDetails.visibility = View.VISIBLE
-                binding.ltFail.fail.visibility = View.GONE
+                binding.btnFail.visibility = View.GONE
+                binding.tvFail.visibility = View.GONE
             }
         }
     }

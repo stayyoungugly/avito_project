@@ -12,10 +12,10 @@ import com.itis.avitoproject.presentation.MyApplication
 import kotlinx.coroutines.launch
 
 class MainFragmentViewModel(private val getCityNameUseCase: GetCityNameUseCase) : ViewModel() {
-    private val _error: MutableLiveData<Throwable> = MutableLiveData()
+    private val _error: SingleLiveEvent<Throwable> = SingleLiveEvent()
     val error: LiveData<Throwable> = _error
 
-    private val _cityName: MutableLiveData<String?> = MutableLiveData()
+    private val _cityName: SingleLiveEvent<String?> = SingleLiveEvent()
     val cityName: LiveData<String?> = _cityName
 
     fun getCityName() {

@@ -4,7 +4,7 @@
 
 Тестовый проект для Авито, октябрь 2022
 
-OpenWeatherMap API
+OpenWeatherMap API (иногда может не работать без VPN или просто долго грузит)
 
 Для работы необходимо добавить в local.properties строчку API_KEY="d725d9dc3262f6cb0f1cbf277e44eaa8"
 

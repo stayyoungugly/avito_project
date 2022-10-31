@@ -10,13 +10,11 @@
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/iv_icon"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:src="@drawable/ic_launcher_background"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
         tools:ignore="ContentDescription" />
 
     <TextView
@@ -26,7 +24,7 @@
         android:layout_marginStart="16dp"
         android:fontFamily="@font/spot_black"
         android:text="@string/date"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@id/iv_icon"
         app:layout_constraintTop_toTopOf="@+id/iv_icon" />
@@ -36,8 +34,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:fontFamily="@font/spot_book"
-        android:text="@string/mintemp"
-        android:textColor="@color/black"
+        android:text="@string/min_temp"
+        android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/tv_temp_max"
@@ -45,13 +43,11 @@
 
     <TextView
         android:id="@+id/tv_temp_max"
+        style="@style/temp_tv"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
-        android:fontFamily="@font/spot_book"
-        android:text="@string/maxtemp"
-        android:textColor="@color/black"
-        android:textSize="20sp"
+        android:text="@string/max_temp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btn_more"
         app:layout_constraintTop_toTopOf="parent" />
@@ -61,7 +57,9 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
+        android:fontFamily="@font/spot_book"
         android:text="@string/description"
+        android:textColor="@color/sub_color"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="@id/iv_icon"
         app:layout_constraintEnd_toStartOf="@+id/tv_temp_min"
